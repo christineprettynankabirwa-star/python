@@ -43,3 +43,9 @@ class Student:
         else:
             print("Invalid course code")
 
+    def compute_cgpa(self):
+        total = sum(result.grade_point for result in self.results.values())
+        cgpa = total / len(self.results)
+        return round(cgpa,2)
+
+# function; passed courses
