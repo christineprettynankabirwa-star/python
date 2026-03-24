@@ -13,4 +13,23 @@ class CourseResult:
         self.mark = mark
         self.grade_point = self.calculate_grade_point()
 
-    def calculate_grade(self):
+    def calculate_grade_point(self):
+        if self.mark < 0 or self.mark > 100:
+            print("Invalid mark")
+            return 0
+        
+        if self.mark >= 80:
+            return 5.0
+        elif self.mark >= 70:
+            return 4.0
+        elif self.mark >= 60:
+            return 3.0
+        elif self.mark >= 50:
+            return 2.0
+        else:
+            return 1.0
+        
+#Student Class
+class Student:
+    def __init__(self, name, reg_no, student_no):
+        
