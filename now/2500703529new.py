@@ -49,3 +49,10 @@ class Student:
         return round(cgpa,2)
 
 # function; passed courses
+def get_passed_courses(student):
+    passed = []
+    for result in student.results.values():
+        if result.mark >= 50:
+            passed.append(result.course_code)
+    return passed
+
