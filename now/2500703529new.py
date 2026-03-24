@@ -37,5 +37,9 @@ class Student:
         self.student_no = student_no
         self.results = {} #dictionary
 
-    
+    def add_result(self, course_code, mark):
+        if course_code in ALLOWED_COURSES:
+            self.results[course_code] = CourseResult(course_code, mark)
+        else:
+            print("Invalid course code")
 
