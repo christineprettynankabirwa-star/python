@@ -56,3 +56,20 @@ def get_passed_courses(student):
             passed.append(result.course_code)
     return passed
 
+#main program
+name = input("Enter Student Name: ")
+reg_no = input("Enter Registration Number: ")
+student_no = input("Enter Student Number: ")
+
+student = Student(name, reg_no, student_no)
+
+for code in ALLOWED_COURSES:
+    mark = int(input(f"Enter mark for {code}: "))
+    student.add_result(code, mark)
+
+print("\n--- RESULTS ---")
+for code, result in student.results.items():
+    print(f"{code}: Mark = {result.mark}, Grade Point = {result.grade_point}")
+
+print("CGPA: ", student.compute_cgpa())
+print("Passed Courses: ", get_passed_courses(student))
