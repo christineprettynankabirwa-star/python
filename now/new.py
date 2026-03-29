@@ -6,6 +6,16 @@ print(components[2])
 if len(components) > 3:
     print(components[3])
 
+students = { 
+    "25/U/26619":{"name":"KAHUMA WALID", "age": 20, "hall":"Lumumba", "Town":"Hoima", "Sex":"M","Course":"BCSC"},
+    "24/U/03567/PS" : "EMMANUEL MUHAME",
+    "25/U/31546/PS" : "ONGOL CESTO",
+    "24/U/26202" : "KATO TREVOR"
+}
+print ("Name",students ["25/U/26619"]["name"])
+print ("Age",students ["25/U/26619"]["age"])
+
+
 mark = input("Enter your mark or X to exit\n")
 while mark.lower() != "x":
     mark = int(mark)
