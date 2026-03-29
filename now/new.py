@@ -36,3 +36,8 @@ while mark.lower() != "x":
         print("Your grade is", "D1")
     mark = input("Enter your mark or X to exit\n")
 print("Exiting, you entered X")
+
+x = 10
+while x <20:
+        print (x)
+        x +=1
