@@ -11,3 +11,12 @@ i = 0
 for letter in letters_set:
     print(f"Letter in position {i} is {letter}")
     i += 1
+
+letters_list = list(letters_set)
+i = 0
+while i<5:
+    print("--------")
+    print ("Letters_set",letters_set)
+    print ("Letters_list",letters_list)
+    i += 1
+print("End")
