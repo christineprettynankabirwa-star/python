@@ -35,4 +35,5 @@ for n in numbers:
     if n%2 != 0:
         print(n)
 
-        
+   for i in range(2,12,2):
+    print(i)     
