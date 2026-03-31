@@ -19,4 +19,13 @@ while i<5:
     print ("Letters_set",letters_set)
     print ("Letters_list",letters_list)
     i += 1
-print("End")
+print("End") 
+
+a,b,c = 1,15,10
+if b < c:
+    print('b is less than c')
+    if a<b:
+        print('a is less than b')
+else:
+    print('c is greater than b')
+    
