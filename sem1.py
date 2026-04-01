@@ -35,5 +35,11 @@ for n in numbers:
     if n%2 != 0:
         print(n)
 
-   for i in range(2,12,2):
+for i in range(2,12,2):
     print(i)     
+
+x = 3
+for j in range(x):
+    for i in range(x):
+        print(i)
+
