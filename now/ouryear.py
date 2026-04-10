@@ -30,6 +30,8 @@ for letter in letters_set:
 print ("Items in the list")
 for letter in letters_list :
     print(letter)
+
+    
 try:
     print(f"Letter in position 3 of list is {letters_set[2]}")
 except Exception as e:
