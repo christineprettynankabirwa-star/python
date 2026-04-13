@@ -65,4 +65,40 @@ class CustomUser(AbstractUser):
     class Meta:
         verbose_name = "Custom User"
         verbose_name_plural = "Custom Users"
+
+        class WeeklyLog(models.Model):
+    STATUS_CHOICES = [
+        ('draft', 'Draft'),
+        ('submitted', 'Submitted'),
+        ('reviewed', 'Reviewed'),
+        ('approved', 'Approved'),
+    ]
+
+    student = models.ForeignKey(
+        'CustomUser',
+        on_delete=models.CASCADE,
+        limit_choices_to={'role': 'student'}
+    )
+
+    placement = models.ForeignKey(
+        'InternshipPlacement',
+        on_delete=models.CASCADE,
+        related_name='weekly_logs'
+    )
+
+    week_number = models.IntegerField()
+
+    activities = models.TextField()
+    challenges = models.TextField()
+
+    status = models.CharField(
+        max_length=20,
+        choices=STATUS_CHOICES,
+        default='draft'
+    )
+
+    submitted_at = models.DateTimeField(null=True, blank=True)
+
+    def __str__(self):
+        return f"Week {self.week_number} - {self.student.username}" 
         
