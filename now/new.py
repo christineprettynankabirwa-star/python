@@ -41,3 +41,8 @@ x = 10
 while x <20:
         print (x)
         x +=1
+
+items = ['cow', 'needle', 'hay', 'key']
+for item in items:
+	if item == 'needle':
+            print ('Needle found')
