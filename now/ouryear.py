@@ -51,18 +51,18 @@ firstTotal= units *5
 total = add_shipping(firstTotal)
 print("your total is", total)
 
-# def f(x):
-#     global y
-#     y=1
-#     x = y+x
-#     return x
+def f(x):
+    global y
+    y=1
+    x = y+x
+    return x
     
-# x=3
-# y=4
-# z=f(x)
-# print('x is ',x)
-# print('y is ',y)
-# print('z is ',z)
+x=3
+y=4
+z=f(x)
+print('x is ',x)
+print('y is ',y)
+print('z is ',z)
 
 # p=  int(input('Enter p \n'))
 # q=  int(input('Enter q \n'))
