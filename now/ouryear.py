@@ -37,10 +37,10 @@ try:
 except Exception as e:
     print (e)
 
-# items = ['cow', 'needle', 'hay', 'key']
-# for item in items:
-# 	if item == 'needle':
-#                 print ('Needle found')
+items = ['cow', 'needle', 'hay', 'key']
+for item in items:
+	if item == 'needle':
+                print ('Needle found')
 
 # def add_shipping(subtotal):
 #     subtotal = subtotal/5
