@@ -42,14 +42,14 @@ for item in items:
 	if item == 'needle':
                 print ('Needle found')
 
-# def add_shipping(subtotal):
-#     subtotal = subtotal/5
-#     return subtotal
+def add_shipping(subtotal):
+    subtotal = subtotal/5
+    return subtotal
 
-# units=50
-# firstTotal= units *5
-# total = add_shipping(firstTotal)
-# print("your total is", total)
+units=50
+firstTotal= units *5
+total = add_shipping(firstTotal)
+print("your total is", total)
 
 # def f(x):
 #     global y
