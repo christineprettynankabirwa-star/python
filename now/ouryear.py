@@ -64,10 +64,10 @@ print('x is ',x)
 print('y is ',y)
 print('z is ',z)
 
-# p=  int(input('Enter p \n'))
-# q=  int(input('Enter q \n'))
-# r=  int(input('Enter r \n'))
-# if  (p % 2 ==1):
-#     print(f"r = {p}")
-# else:
-#     print ('q')
+p=  int(input('Enter p \n'))
+q=  int(input('Enter q \n'))
+r=  int(input('Enter r \n'))
+if  (p % 2 ==1):
+    print(f"r = {p}")
+else:
+    print ('q')
