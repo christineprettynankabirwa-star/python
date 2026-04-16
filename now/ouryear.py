@@ -82,3 +82,15 @@ for i in range(y):
     print(f"Iteration {i}")
     for j in range(y):
         print(i+j)
+
+
+a = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
+b = (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8)
+sum = int(a) ,int(b)
+colors = ['red',
+'blue',
+'green']
+print (a)
+print(b)
+print (sum)
+print(colors) 
