@@ -71,3 +71,8 @@ if  (p % 2 ==1):
     print(f"r = {p}")
 else:
     print ('q')
+
+x = 3
+for j in range(x):
+    for i in range(x):
+        print(i)
