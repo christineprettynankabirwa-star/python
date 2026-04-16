@@ -75,4 +75,10 @@ else:
 x = 3
 for j in range(x):
     for i in range(x):
-        print(i)
+        print(i) 
+
+y=5 
+for i in range(y):
+    print(f"Iteration {i}")
+    for j in range(y):
+        print(i+j)
