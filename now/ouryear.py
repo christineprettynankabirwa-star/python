@@ -94,3 +94,22 @@ print (a)
 print(b)
 print (sum)
 print(colors) 
+
+print(f"Hello, {name}!")
+import datetime
+today = datetime.datetime.today()
+year = today.year 
+print("We are in "+str(year))
+
+# letters_list = ['a','b','c','d']
+# print(f"Letter in position 3 of list is {letters_list[2]}")
+# print ("Items in the set")
+# for letter in letters_set:
+#     print(letter)
+# print ("Items in the list")
+# for letter in letters_list :
+#     print(letter)
+# try:
+#     print(f"Letter in position 3 of list is {letters_set[2]}")
+# except Exception as e:
+#     print (e)
