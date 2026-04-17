@@ -95,6 +95,7 @@ print(b)
 print (sum)
 print(colors) 
 
+name = input("Enter your beautiful name \n")
 print(f"Hello, {name}!")
 import datetime
 today = datetime.datetime.today()
