@@ -52,3 +52,13 @@ def fun(a):
         print ('{}\t{}'.format (x, x*x))
         
 fun(3)
+
+print()
+nested = [[1,2],[3,4,5],[6]]
+flat = [x for sub in nested for x in sub]
+print(flat)
+print('---------')
+for part in nested:
+    for x in part:
+        print (x) 
+        
