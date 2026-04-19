@@ -46,3 +46,9 @@ items = ['cow', 'needle', 'hay', 'key']
 for item in items:
 	if item == 'needle':
             print ('Needle found')
+
+def fun(a):
+    for x in range (a-1, a*a):
+        print ('{}\t{}'.format (x, x*x))
+        
+fun(3)
